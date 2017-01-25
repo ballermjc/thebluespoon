@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# for authorization
+gem 'cancancan', '~> 1.10'
+
+# for authentication
 gem 'devise'
 
 group :development, :test do
