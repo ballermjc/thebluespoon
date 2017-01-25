@@ -30,3 +30,45 @@ footer {
   background-color: skyblue;
   color: white;
 }
+
+.form-signin {
+  max-width: 400px;
+  padding: 20px 40px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.signin-heading {
+  margin-bottom: 30px;
+  font-family: Georgia, serif;
+}
+
+.email-signin {
+  margin: 0 auto;
+
+}
+
+.email-input, .password-input {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.25em;
+}
+
+.remember-me {
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 100%
+}
+
+.login-links {
+  max-width: 400px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.login-links a{
+  font-size: 1.35em;
+  font-family: Georgia, serif;
+}
