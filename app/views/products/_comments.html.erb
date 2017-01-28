@@ -9,3 +9,13 @@
         </div>
     <% end %>
 </div>
+
+<div class="flickr_pagination">
+    <div class="page_info">
+      <%= page_entries_info @comments %>
+    </div>
+    <br>
+    <%= will_paginate @comments, :container => false %>
+  </div>
+
+<br><br>
