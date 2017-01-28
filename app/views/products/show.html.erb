@@ -1,30 +1,47 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+<div class="show-product">
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+  <h2>
+    <!-- <strong>Name:</strong> -->
+    <br><br>
+    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    <%= @product.name %>
+    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    <br>
+  </h2>
 
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
+  <h4>
+    <!-- <strong>Description:</strong> -->
+    <br><br>
+    <em><%= @product.description %></em>
+  </h4>
 
-<p>
-  <strong>Price:</strong>
-  <%= number_to_currency(@product.price) %>
-</p>
+  <p>
+    <!-- <strong>Image url:</strong> -->
+    <!-- <%= @product.image_url %> -->
+    <%= image_tag(@product.image_url, class: "img-responsive" ) unless @product.image_url.blank? %>
+  </p>
+
+  <p>
+    <strong>Colour:</strong>
+    <%= @product.colour %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= number_to_currency(@product.price) %>
+  </p>
+
+  <p><%= @product.highest_rating_comment %></p>
+
+  <div class="comment-input">
+    <%= render 'new_comment' %>
+  </div>
+  <%= render 'comments' %>
 
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+</div>

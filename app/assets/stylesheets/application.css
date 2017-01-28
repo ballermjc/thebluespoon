@@ -20,6 +20,7 @@ html {
 body {
   padding-top: 50px;
   margin-bottom: 60px;
+  background-image: url('./app/assets/images/whitebrick.jpg');
 }
 
 footer {
@@ -49,7 +50,7 @@ footer {
 
 }
 
-.email-input, .password-input {
+.email-input, .password-input, .comment-input {
   border: 1px solid rgba(0,0,0,0.2);
   border-radius: 5px;
   padding: 5px 10px;
@@ -70,5 +71,16 @@ footer {
 
 .login-links a{
   font-size: 1.35em;
+  font-family: Georgia, serif;
+}
+
+.show-product {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+.show-product h2 {
   font-family: Georgia, serif;
 }
