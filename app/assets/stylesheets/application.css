@@ -20,7 +20,7 @@ html {
 body {
   padding-top: 50px;
   margin-bottom: 60px;
-  background-image: url('./app/assets/images/whitebrick.jpg');
+  /*background-image: url('./app/assets/images/whitebrick.jpg');*/
 }
 
 footer {
