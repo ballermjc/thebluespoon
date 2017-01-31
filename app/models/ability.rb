@@ -7,4 +7,9 @@ class Ability
     can :manage, User, id: user.id
   end
 
+  if user.admin?
+    can :destroy, Comment
+    can :manage, Product
+  end
+  
 end
