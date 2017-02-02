@@ -20,7 +20,9 @@
 
   <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
 
-  <p>"<%= @product.highest_rating_comment.body%>"</p>
+  <% if !@product.comments.empty? %>
+    <p>"<%= @product.highest_rating_comment.body%>"</p>
+  <% end %>
 
   <p>
     <!-- <strong>Image url:</strong> -->
