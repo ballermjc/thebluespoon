@@ -36,7 +36,7 @@ gem 'cancancan', '~> 1.10'
 # for authentication
 gem 'devise'
 
-# for pagination of reviews 
+# for pagination of reviews
 gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
@@ -44,6 +44,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
