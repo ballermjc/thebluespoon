@@ -39,6 +39,9 @@ gem 'devise'
 # for pagination of reviews
 gem 'will_paginate', '~> 3.1.0'
 
+# accept online payments 
+gem 'stripe'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
