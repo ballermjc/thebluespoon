@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  invisible_captcha only: :contact, on_spam: :spam_response
+
   def index
   end
 
@@ -17,6 +19,12 @@ class StaticPagesController < ApplicationController
     @email = params[:email]
     @message = params[:message]
     UserMailer.contact_form(@email, @name, @message).deliver_now
+  end
+
+  private
+
+  def spam_response
+    redirect_to root_path, alert: "Spam Detected"
   end
 
 end

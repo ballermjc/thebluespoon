@@ -39,8 +39,15 @@ gem 'devise'
 # for pagination of reviews
 gem 'will_paginate', '~> 3.1.0'
 
-# accept online payments 
+# accept online payments
 gem 'stripe'
+
+# invisible captcha
+gem 'invisible_captcha'
+
+#security
+gem 'devise_security_extension'
+gem 'rails_email_validator'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
