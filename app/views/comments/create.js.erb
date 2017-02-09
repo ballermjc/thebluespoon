@@ -1,0 +1,8 @@
+// upon new comment, replace form with message
+$('#new_comment').html("Thank you for your review!");
+
+// upon new comment, render new comment
+$('.product-reviews').prepend("<%= j render @comment %>");
+
+// upon new comment. update average-rating
+$('#average-rating').attr('data-score', "<%= @product.average_rating %>");
