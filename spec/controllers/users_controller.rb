@@ -18,13 +18,6 @@ describe UsersController, :type => :controller do
         expect(assigns(:user)).to eq user
       end
 
-    context 'No user is logged in' do
-      it 'redirects to login' do
-        get :show, id: user.id
-        expect(response).to redirect_to(root_path)
-      end
-    end
-
     context "Check if user can see another user's show page" do
       it 'redirects to root_path' do
       get :show, id: user2.id
