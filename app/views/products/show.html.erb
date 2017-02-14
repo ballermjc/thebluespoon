@@ -15,7 +15,9 @@
   <h4>
     <!-- <strong>Description:</strong> -->
     <br><br>
-    <em><%= @product.description %></em>
+    <% cache @product do %>
+      <em><%= @product.description %></em>
+    <% end %>
   </h4><br><br>
 
 

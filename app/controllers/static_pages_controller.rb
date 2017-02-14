@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
-  invisible_captcha only: :contact, on_spam: :spam_response
+
+  invisible_captcha only: [:create, :update], honeypot: :subtitle
 
   def index
   end
