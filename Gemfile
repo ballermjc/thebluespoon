@@ -49,6 +49,9 @@ gem 'invisible_captcha'
 gem 'devise_security_extension'
 gem 'rails_email_validator'
 
+# caching
+gem 'dalli'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
