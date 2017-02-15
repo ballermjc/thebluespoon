@@ -7,7 +7,7 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       if (Rails.env == "production")
-        @products = Product.where("name ilike?", "%#{search_term}%")
+        @products = Product.where("name ilike ?", "%#{search_term}%")
       else
         @products = Product.where("name LIKE ?", "%#{search_term}%")
       end
@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    byebug
+    # byebug
     @product = Product.new
   end
 

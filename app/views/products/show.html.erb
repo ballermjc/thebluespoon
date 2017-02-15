@@ -49,13 +49,13 @@
   <% end %>
 
 
-<p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
+  <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> </p>
 
   <div class="comment-input">
     <%= render 'new_comment' %>
   </div>
 
-
+  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 
     <%= render "comments" %>
 
