@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<div class="show-product">
+<div class="show-product" data-product-id="<%= @product.id %>">
 
   <h2>
     <!-- <strong>Name:</strong> -->
@@ -44,7 +44,7 @@
   </p>
 
   <%= form_tag "/payments/create" do %>
-    <%= hidden_field_tag(:product_id, @product_id) %>
+    <%= hidden_field_tag(:product_id, @product.id) %>
     <%= render "shared/stripe_checkout_button" %>
   <% end %>
 
